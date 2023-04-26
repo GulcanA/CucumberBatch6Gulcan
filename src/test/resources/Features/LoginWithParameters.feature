@@ -1,4 +1,4 @@
-@rerun
+@rerun @smoke
 Feature: Login as different users
 
 

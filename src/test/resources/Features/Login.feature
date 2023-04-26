@@ -1,4 +1,4 @@
-@login
+@login @smoke
 Feature: Eurotech Login Test
 
   Background:

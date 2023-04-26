@@ -1,4 +1,4 @@
-@report
+@report @smoke
 Feature:  Navigation Menu
 
   @developersMenu
