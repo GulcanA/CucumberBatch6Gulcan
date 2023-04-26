@@ -10,6 +10,7 @@ public class ProfilePage extends BasePage{
 
     @FindBy(linkText = "Go Back")
     public WebElement goBackButton;
+   // int a;
 
 
 }
