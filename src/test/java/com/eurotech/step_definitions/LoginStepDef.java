@@ -92,6 +92,8 @@ public class LoginStepDef {
     public void theWarningMessageContains(String expectedMessage) {
        String actualMessage= loginPage.getWarningMessage(expectedMessage);
        Assert.assertEquals(expectedMessage,actualMessage);
+    // bunu ben yazdim
+     //   System.out.println("Validation Message " + loginPage.passwordInput.getAttribute("validationMessage"));
 
     }
 
