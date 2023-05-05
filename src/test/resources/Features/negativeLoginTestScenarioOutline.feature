@@ -1,6 +1,6 @@
 Feature: Negative Login Test
 
-@wip
+
   Scenario Outline: Negative Login Test Devex
     Given The user is on the login page
     When The user enters invalid "<username>" and "<password>" credentials

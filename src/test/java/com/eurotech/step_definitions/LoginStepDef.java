@@ -121,7 +121,8 @@ public class LoginStepDef {
     public void the_user_verify_that_company_name(Integer rowNumberForCompany) {
 
         //1 way
-        String actualCompanyName= dashboardPage.getCompanyName(dataList.get(rowNumberForCompany).get("Company"));
+       String actualCompanyName= dashboardPage.getCompanyName(dataList.get(rowNumberForCompany).get("Company"));
+
         //   Assert.assertEquals(dataList.get(rowNumberForCompany).get("Company"),actualCompanyName);
 
         //2 way

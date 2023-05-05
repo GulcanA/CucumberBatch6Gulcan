@@ -37,6 +37,9 @@ public class DashboardPage extends BasePage{
     @FindBy(xpath = "//*[@id='dashboard-experince-item-raw']//time/..")
     public WebElement experienceDate;
 
+    @FindBy(xpath = "//*[text()='Experience Added']")
+    public WebElement experienceAddedMessage;
+
 
     public void navigateMenu(String menuName){
         Driver.get().findElement(By.xpath("//*[text()='"+menuName+"']")).click();
@@ -56,5 +59,7 @@ public class DashboardPage extends BasePage{
     public String getHeader(String name){
       return   Driver.get().findElement(By.xpath("//*[text()='"+name+"']")).getText();
     }
+
+
 
 }
