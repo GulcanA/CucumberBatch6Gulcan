@@ -7,6 +7,8 @@ import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 
+import java.util.Map;
+
 public class ExperienceStepDef {
     ExperiencePage experiencePage=new ExperiencePage();
     @Then("The user should land on Add An Experience page")
@@ -33,4 +35,18 @@ public class ExperienceStepDef {
     public void theUserSubmitsTheExperienceForm() {
         experiencePage.submitButton.click();
     }
+
+    @Then("The user fills the experience form and submits")
+    public void the_user_fills_the_experience_form_and_submits(Map<String,String> experienceForm) {
+        experiencePage.jobTitle.sendKeys(experienceForm.get("Job Title"));
+        experiencePage.company.sendKeys(experienceForm.get("Company"));
+        experiencePage.location.sendKeys(experienceForm.get("Location"));
+        experiencePage.fromDate.sendKeys(experienceForm.get("From Date"));
+        experiencePage.toDate.sendKeys(experienceForm.get("To Date"));
+        experiencePage.jobDescription.sendKeys(experienceForm.get("Job Description"));
+
+        experiencePage.submitButton.click();
+
+
+            }
 }

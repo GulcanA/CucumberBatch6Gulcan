@@ -11,6 +11,30 @@ public class ExperiencePage extends BasePage {
     @FindBy(xpath = "//input[@type='submit']")
     public WebElement submitButton;
 
+    @FindBy(xpath = "//*[contains(@placeholder, 'Job Title')]")
+    public WebElement jobTitle;
+
+    @FindBy(xpath = "//*[contains(@placeholder, 'Company')]")
+    public WebElement company;
+
+    @FindBy(xpath = "//*[contains(@placeholder, 'Location')]")
+    public WebElement location;
+
+    @FindBy(xpath = "//*[contains(text(), 'From Date')]/../input")
+    public WebElement fromDate;
+
+    @FindBy(xpath = "//*[contains(text(), 'To Date')]/../input")
+    public WebElement toDate;
+
+    @FindBy(xpath = "//*[contains(@placeholder, 'Job Description')]")
+    public WebElement jobDescription;
+
+
+
+
+
+
+
 
 
 }

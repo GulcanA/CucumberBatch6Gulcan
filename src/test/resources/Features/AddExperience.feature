@@ -1,5 +1,5 @@
 Feature: Add experience positive tests
-  @wip
+
   Scenario: Add experience positive test 1
     Given The user is on the login page
     When The user logs in using "gulcan@gmail.com" and "newjob2023" credentials
@@ -14,6 +14,24 @@ Feature: Add experience positive tests
     And The user picks "To Date" as "04/08/2023"
     And The user fills "Job Description" field as "Quality Assurance"
     And The user submits the experience form
+    Then The user should see the experience added message
+
+  @wip
+  Scenario: Add experience positive test 1
+    Given The user is on the login page
+    When The user logs in using "gulcan@gmail.com" and "newjob2023" credentials
+    Then The user should be able to login
+    Then The welcome message contains "Gülcan"
+    When The user clicks "Add Experience"
+    Then The user should land on Add An Experience page
+    And The user fills the experience form and submits
+      | Job Title       | QA Test Engineer  |
+      | Company         | Oracle            |
+      | Location        | New York          |
+      | From Date       | 01/05/2021        |
+      | To Date         | 04/08/2023        |
+      | Job Description | Quality Assurance |
+
     Then The user should see the experience added message
 
 
